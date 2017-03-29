@@ -16,6 +16,8 @@ body {
   max-width: 80%;
 }
 
+
+
 .color-cadetblue {
   background-color: rgba(94, 158, 160, .75);
   color: white;
@@ -53,7 +55,7 @@ header img {
   padding: 0 1rem 0 2rem;
 }
 
-header nav ul {
+header nav ul,.collapsed-nav {
   margin: 0;
   display: flex;
   align-items: center;
@@ -61,6 +63,10 @@ header nav ul {
   justify-content: flex-end;
   padding: 1rem 0;
   list-style-type: none;
+}
+
+header .collapsed-nav {
+  display: none;
 }
 
 header a {
@@ -91,12 +97,11 @@ header h2 {
 }
 
 .service {
-
   padding: 3rem;
   text-align: center;
 }
 
-.services .service,img {
+.service, .service img {
   max-width: 4rem;
   max-height: 4rem;
 }
@@ -122,8 +127,6 @@ header h2 {
 
 
 .information {
-  display: grid;
-  grid-template-columns: auto auto;
   display: flex;
   justify-content: center;
 }
@@ -148,6 +151,133 @@ footer {
   margin: 0 12.5%;
 }
 
-footer img {
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-logo img {
+  height: 1.5rem;
   padding: 4rem 1rem 4rem 3rem;
+}
+
+
+
+
+/*TABLET*/
+
+@media only screen and (max-width: 1024px) {
+  .main-grid {
+    max-width: 100%;
+  }
+
+
+  header {
+    height: 22rem;
+  }
+
+  header nav {
+
+    width: 100%;
+    margin: 0;
+
+  }
+
+  header h2 {
+    margin: 6rem 7% 0 0;
+    padding: 1rem 2rem;
+    font-size: 1.33rem;
+  }
+
+  .info {
+    width: 40%;
+    padding: 0 2.5% 4rem 2.5%;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+/*PHONE*/
+
+@media only screen and (max-width: 736px) {
+  header {
+    height: 17rem;
+  }
+
+  header h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin: 10rem 0 0 0;
+    padding: .5rem 0;
+  }
+
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .service {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .service, .service img {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+
+  .service-img {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+    padding: 0 2.5% 4rem 2.5%;
+  }
+
+  .info h4 {
+    width: 100%;
+    padding: .5rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .info p {
+    text-align: center;
+    padding: 0 5rem;
+    font-size: 1rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    height: 1.5rem;
+    padding: 4rem 1rem 4rem 3rem;
+  }
+
 }
