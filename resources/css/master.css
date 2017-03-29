@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Helvetica;
 }
 
 .main-grid {
@@ -15,10 +16,46 @@ body {
 }
 
 header {
-  height: 40rem;
+  height: 31rem;
   background-image: url(../images/glasses-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: auto;
+  width: 85%;
+  margin: 1rem 7.5% 0 7.5%;
+  background-color: cadetblue;
+  color: white;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+header nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem 0 1rem 0;
+  list-style-type: none;
+}
+
+header a {
+  color: white;
+  padding-right: 2rem;
+  text-decoration: none;
 }
 
 .gallery {
