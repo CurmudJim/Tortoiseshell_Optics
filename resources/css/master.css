@@ -13,12 +13,21 @@ body {
   grid-template-rows: auto auto auto;
   background-color: white;
   width: 100%;
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .color-cadetblue {
   background-color: rgba(94, 158, 160, .75);
   color: white;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
 }
 
 /*HEADER SECTION*/
@@ -35,18 +44,12 @@ header nav {
   display: grid;
   grid-template-columns: auto auto;
   height: auto;
-  width: 85%;
-  margin: 1rem 7.5% 0 7.5%;
+  width: 80%;
+  margin: 1rem 10% 0 10%;
   color: white;
 }
 
-header .logo {
-    display: inline-flex;
-    align-items: center;
-}
-
 header img {
-  height: 1.5rem;
   padding: 0 1rem 0 2rem;
 }
 
@@ -69,7 +72,7 @@ header a {
 header h2 {
   display: inline-flex;
   float: right;
-  margin: 10rem 6.5% 0 0;
+  margin: 10rem 8% 0 0;
   background-color: rgba(255, 255, 255, .75);
   color: rgba(0, 0, 0, 0.75);
   padding: 1.5rem 3rem;
@@ -80,29 +83,43 @@ header h2 {
 /*GALLERY*/
 
 
-.gallery {
-  display: grid;
-  grid-template-rows: 10rem auto;
-}
 
-.gallery .services {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  display: inline-flex;
-  justify-content: center;
-}
-
-.gallery .service {
-  padding: 3rem;
+.services {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.service {
+
+  padding: 3rem;
   text-align: center;
 }
 
-.gallery img {
+.services .service,img {
+  max-width: 4rem;
   max-height: 4rem;
 }
+
+.service-img {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-img img {
+
+}
+
+
+.service-title {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .information {
   display: grid;
@@ -123,7 +140,14 @@ header h2 {
   font-weight: bold;
 }
 
+/*FOOTER*/
+
 footer {
-  height: 30rem;
-  background-color: green;
+  background-color: rgb(239,248,255);
+  width: 75%;
+  margin: 0 12.5%;
+}
+
+footer img {
+  padding: 4rem 1rem 4rem 3rem;
 }
