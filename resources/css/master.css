@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-grid {
+  display: grid;
+  /*display: flex;
+  justify-content: center;*/
+  grid-template-rows: auto auto auto;
+  background-color: white;
+  width: 100%;
+  max-width: 1080px;
+}
+
+header {
+  height: 40rem;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery {
+  height: 50rem;
+  background-color: red;
+}
+
+footer {
+  height: 30rem;
+  background-color: green;
+}
