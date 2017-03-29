@@ -16,12 +16,12 @@ body {
   max-width: 80%;
 }
 
-
-
 .color-cadetblue {
   background-color: rgba(94, 158, 160, .75);
   color: white;
 }
+
+
 
 .logo {
     display: inline-flex;
@@ -55,9 +55,16 @@ header img {
   padding: 0 1rem 0 2rem;
 }
 
-header nav ul,.collapsed-nav {
-  margin: 0;
+header .full-nav {
   display: flex;
+}
+
+header .collapsed-nav {
+  display: none;
+}
+
+.full-nav, .collapsed-nav {
+  margin: 0;
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
@@ -65,9 +72,6 @@ header nav ul,.collapsed-nav {
   list-style-type: none;
 }
 
-header .collapsed-nav {
-  display: none;
-}
 
 header a {
   color: white;
@@ -206,6 +210,14 @@ footer {
 @media only screen and (max-width: 736px) {
   header {
     height: 17rem;
+  }
+
+  header .full-nav {
+    display: none;
+  }
+
+  header .collapsed-nav {
+    display: flex;
   }
 
   header h2 {
